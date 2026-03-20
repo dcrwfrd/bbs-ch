@@ -1,0 +1,20 @@
+[package]
+name = "bbs-ch"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+# iced: cross-platform GUI framework with an Elm-style architecture.
+# The "wgpu" feature selects the GPU-accelerated renderer (default on desktop).
+iced = { version = "0.14", features = ["wgpu"] }
+
+# Application-level error handling throughout the codebase.
+anyhow = "1"
+
+# Serialization framework. The "derive" feature enables #[derive(Serialize, Deserialize)]
+# on model types, which both the JSON layer and any future storage backend will use.
+serde = { version = "1", features = ["derive"] }
+
+# JSON implementation of serde. Used permanently for config/data files,
+# and temporarily for save state until SQLite is introduced.
+serde_json = "1"
