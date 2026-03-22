@@ -1,46 +1,46 @@
-/// The emotional tone of a piece of media coverage.
-#[derive(Debug, Clone, PartialEq, Eq, serde::Serialize, serde::Deserialize)]
-pub enum MediaTone {
-    Glowing,   // "Best team in the country"
-    Positive,
-    Neutral,
-    Skeptical,
-    Critical,
-    Hostile,   // Hot take / pile-on territory
+use crate::model::{conference::Conference, school::School, tournament::Tournament};
+
+/// The loaded static game world — schools, conferences, and tournaments that
+/// define the league structure. Read from `data/` at startup and held in
+/// memory for the lifetime of a session.
+///
+/// This is config, not save state — it lives in `DataLoader`, not `Storage`.
+#[derive(Debug, Clone)]
+pub struct League {
+    pub schools: Vec<School>,
+    pub conferences: Vec<Conference>,
+    pub tournaments: Vec<Tournament>,
+    /// Path to the governing association's logo asset, relative to `data/`.
+    /// e.g., `"logos/league.png"`. `None` if not configured.
+    pub logo: Option<String>,
 }
 
-/// A generated news story that exists in the game world.
-///
-/// Produced by the sim engine in response to events: wins, upsets,
-/// transfers, coaching decisions, rankings movements. Affects program
-/// reputation and player morale over time.
-#[derive(Debug, Clone, serde::Serialize, serde::Deserialize)]
-pub struct NewsStory {
-    pub id: u32,
-    pub headline: String,
-    pub tone: MediaTone,
-    /// Programs involved (multiple for rivalry/upset stories).
-    pub program_ids: Vec<u32>,
-    /// Players specifically named in the story.
-    pub player_idx: Vec<u32>,
-    /// The sim week this story was generated.
-    pub week: u32,
-}
+impl League {
+    pub fn school_by_id(&self, id: u32) -> Option<&School> {
+        self.schools.iter().find(|s| s.id == id)
+    }
 
-/// The current media narrative around a program.
-///
-/// A rolling summary of how the press perceives a program right now —
-/// distinct from historical prestige. A blue-blood having a down year
-/// can carry a negative narrative despite high prestige.
-///
-/// Affects: recruit confidence during visits, transfer portal interest,
-/// fan expectations, coach hot-seat pressure.
-#[derive(Debug, Clone, serde::Serialize, serde::Deserialize)]
-pub struct MediaNarrative {
-    pub program_id: u32,
-    pub tone: MediaTone,
-    /// -1000 to 1000. Volume of national media attention.
-    pub national_profile: i16,
-    /// Most recent story driving the current narrative.
-    pub latest_story_id: Option<u32>,
+    pub fn school_by_id_mut(&mut self, id: u32) -> Option<&mut School> {
+        self.schools.iter_mut().find(|s| s.id == id)
+    }
+
+    pub fn conference_by_id(&self, id: u32) -> Option<&Conference> {
+        self.conferences.iter().find(|c| c.id == id)
+    }
+
+    pub fn conference_by_id_mut(&mut self, id: u32) -> Option<&mut Conference> {
+        self.conferences.iter_mut().find(|c| c.id == id)
+    }
+
+    pub fn tournament_by_id(&self, id: u32) -> Option<&Tournament> {
+        self.tournaments.iter().find(|t| t.id == id)
+    }
+
+    pub fn tournament_by_id_mut(&mut self, id: u32) -> Option<&mut Tournament> {
+        self.tournaments.iter_mut().find(|t| t.id == id)
+    }
+
+    pub fn schools_in_conference(&self, conference_id: u32) -> Vec<&School> {
+        self.schools.iter().filter(|s| s.conference_id == conference_id).collect()
+    }
 }

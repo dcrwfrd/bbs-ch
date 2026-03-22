@@ -1,4 +1,7 @@
 /target
 result
 .direnv
-/save
+/assets
+/data/logos
+/mods
+/saves

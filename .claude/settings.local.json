@@ -1,7 +1,13 @@
 {
   "permissions": {
     "allow": [
-      "Bash(cargo check:*)"
+      "Bash(cargo check:*)",
+      "Bash(pdftotext /home/dcrwfrd/.rs/bbs-ch/docs/List_of_NCAA_Division_I_men''s_basketball_programs.pdf -)",
+      "Bash(nix develop:*)",
+      "Bash(python3:*)",
+      "WebSearch",
+      "WebFetch(domain:github.com)",
+      "Bash(cargo build:*)"
     ]
   }
 }

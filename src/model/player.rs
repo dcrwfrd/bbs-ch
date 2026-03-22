@@ -126,12 +126,47 @@ pub enum PlayerTrait {
     IronMan,
 }
 
+/// Where a player stands academically with the program.
+///
+/// Placeholder — standing thresholds and rules subject to change.
+#[derive(Debug, Clone, PartialEq, Eq, serde::Serialize, serde::Deserialize)]
+pub enum AcademicStanding {
+    GoodStanding,
+    Probation,   // At risk of ineligibility; triggers check-in events
+    Ineligible,  // Cannot play until standing is restored
+}
+
+/// How seriously a player takes their academic responsibilities.
+///
+/// Affects tutoring outcomes, GPA drift, and interaction event frequency.
+///
+/// Placeholder — subject to change.
+#[derive(Debug, Clone, PartialEq, Eq, serde::Serialize, serde::Deserialize)]
+pub enum AcademicAttitude {
+    Engaged,
+    Adequate,
+    Indifferent,
+    Struggling,
+}
+
+/// A player's academic profile.
+///
+/// Placeholder — fields and mechanics are subject to change.
+#[derive(Debug, Clone, serde::Serialize, serde::Deserialize)]
+pub struct PlayerAcademics {
+    pub major: String,
+    pub gpa: f32,   // 0.0–4.0
+    pub standing: AcademicStanding,
+    pub attitude: AcademicAttitude,
+}
+
 /// A player on an active roster.
 #[derive(Debug, Clone, serde::Serialize, serde::Deserialize)]
 pub struct Player {
     pub id: u32,
     pub first_name: String,
     pub last_name: String,
+    pub jersey_num: u8,
     pub position: Position,
     pub class: Class,
 
@@ -141,6 +176,8 @@ pub struct Player {
     pub skills: PlayerSkills,
     pub personality: PlayerPersonality,
     pub traits: Vec<PlayerTrait>,
+
+    pub academics: PlayerAcademics,
 
     pub morale: i8,
 

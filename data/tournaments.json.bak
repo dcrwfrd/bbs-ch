@@ -1,0 +1,24 @@
+[
+  {
+    "name": "National Championship Tournament",
+    "abbreviation": "NCAAT",
+    "kind": "NationalChampionship",
+    "bracket_format": "SingleElimination",
+    "field_size": 68,
+    "host_site": "Various sites, TBD",
+    "conference": null,
+    "automatic_bids": 32,
+    "at_large_bids": 36
+  },
+  {
+    "name": "National Invitation Tournament",
+    "abbreviation": "NIT",
+    "kind": "SecondaryPostseason",
+    "bracket_format": "SingleElimination",
+    "field_size": 32,
+    "host_site": "Various sites / MSG Finals",
+    "conference": null,
+    "automatic_bids": 0,
+    "at_large_bids": 32
+  }
+]

@@ -20,6 +20,7 @@
       rustToolchain = pkgs.rust-bin.stable.latest.default.override {
         extensions = [ "rust-src" "clippy" "rustfmt" "rust-analyzer" ];
       };
+
     in
     {
       devShells.${system}.default = pkgs.mkShell {
@@ -38,6 +39,7 @@
           pkgs.libxcursor
           pkgs.libxrandr
           pkgs.libxi
+
         ];
 
         shellHook = ''
@@ -45,10 +47,11 @@
           # even though they are in buildInputs (Nix doesn't auto-add them).
           export LD_LIBRARY_PATH="${pkgs.vulkan-loader}/lib:${pkgs.wayland}/lib:${pkgs.libxkbcommon}/lib:$LD_LIBRARY_PATH"
 
-          alias cd=z
-          alias find=fd
-          alias ls=eza
-          alias yazi=yz
+          alias z=cd
+          alias fd=find
+          alias eza=ls
+          alias vi=nvim
+          alias yz=yazi
         '';
       };
     };

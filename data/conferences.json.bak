@@ -1,0 +1,615 @@
+[
+  {
+    "name": "ACC",
+    "abbreviation": "ACC",
+    "region": "Southeast",
+    "tier": "PowerConference",
+    "members": [
+      "BC",
+      "CAL",
+      "CLEM",
+      "DUKE",
+      "FSU",
+      "GT",
+      "NCST",
+      "ND",
+      "PITT",
+      "SMU",
+      "STAN",
+      "SYR",
+      "UL",
+      "UM",
+      "UNC",
+      "UVA",
+      "VT",
+      "WFU"
+    ]
+  },
+  {
+    "name": "America East",
+    "abbreviation": "AE",
+    "region": "Northeast",
+    "tier": "LowMajor",
+    "members": [
+      "ALBA",
+      "BING",
+      "BRY",
+      "NJIT",
+      "UMBC",
+      "UME",
+      "UML",
+      "UNH",
+      "UVM"
+    ]
+  },
+  {
+    "name": "American",
+    "abbreviation": "AAC",
+    "region": "Southwest",
+    "tier": "MidMajor",
+    "members": [
+      "ECU",
+      "FAU",
+      "MEM",
+      "RICE",
+      "TLSA",
+      "TU",
+      "TUL",
+      "UAB",
+      "UNCC",
+      "UNT",
+      "USF",
+      "UTSA",
+      "WSU"
+    ]
+  },
+  {
+    "name": "Atlantic 10",
+    "abbreviation": "A10",
+    "region": "MidAtlantic",
+    "tier": "MidMajor",
+    "members": [
+      "DAV",
+      "DUQ",
+      "FOR",
+      "GMU",
+      "GWU",
+      "LSU",
+      "LUC",
+      "SBU",
+      "SJU",
+      "SLU",
+      "UD",
+      "UR",
+      "URI",
+      "VCU"
+    ]
+  },
+  {
+    "name": "Atlantic Sun",
+    "abbreviation": "ASUN",
+    "region": "Southeast",
+    "tier": "MidMajor",
+    "members": [
+      "APSU",
+      "BU",
+      "EKU",
+      "FGCU",
+      "JU",
+      "LIP",
+      "QU",
+      "STET",
+      "UCA",
+      "UNA",
+      "UNF",
+      "UWG"
+    ]
+  },
+  {
+    "name": "Big 12",
+    "abbreviation": "B12",
+    "region": "Plains",
+    "tier": "PowerConference",
+    "members": [
+      "ARIZ",
+      "ASU",
+      "BAY",
+      "BYU",
+      "CIN",
+      "CU",
+      "HOU",
+      "ISU",
+      "KSU",
+      "KU",
+      "OKST",
+      "TCU",
+      "TTU",
+      "UCF",
+      "UTAH",
+      "WVU"
+    ]
+  },
+  {
+    "name": "Big East",
+    "abbreviation": "BE",
+    "region": "MidAtlantic",
+    "tier": "PowerConference",
+    "members": [
+      "BUT",
+      "CU",
+      "DPU",
+      "GU",
+      "MU",
+      "NOVA",
+      "PC",
+      "SHU",
+      "SJU",
+      "UCONN",
+      "XU"
+    ]
+  },
+  {
+    "name": "Big Sky",
+    "abbreviation": "BSky",
+    "region": "West",
+    "tier": "LowMajor",
+    "members": [
+      "EWU",
+      "ISU",
+      "MSU",
+      "NAU",
+      "PSU",
+      "SAC",
+      "UI",
+      "UMNT",
+      "UNCO",
+      "WSU"
+    ]
+  },
+  {
+    "name": "Big South",
+    "abbreviation": "BSC",
+    "region": "Southeast",
+    "tier": "LowMajor",
+    "members": [
+      "CSU",
+      "GWU",
+      "HPU",
+      "LWD",
+      "PC",
+      "RAD",
+      "UNCA",
+      "UPST",
+      "WIN"
+    ]
+  },
+  {
+    "name": "Big Ten",
+    "abbreviation": "B1G",
+    "region": "Midwest",
+    "tier": "PowerConference",
+    "members": [
+      "ILL",
+      "IOWA",
+      "IU",
+      "MICH",
+      "MINN",
+      "MSU",
+      "NEB",
+      "NW",
+      "ORE",
+      "OSU",
+      "PSU",
+      "PUR",
+      "RU",
+      "UCLA",
+      "UMD",
+      "USC",
+      "UW",
+      "WIS"
+    ]
+  },
+  {
+    "name": "Big West",
+    "abbreviation": "BWC",
+    "region": "West",
+    "tier": "LowMajor",
+    "members": [
+      "CPY",
+      "CSUB",
+      "CSUF",
+      "CSUN",
+      "LBS",
+      "UCD",
+      "UCI",
+      "UCR",
+      "UCSB",
+      "UCSD",
+      "UH"
+    ]
+  },
+  {
+    "name": "CAA",
+    "abbreviation": "CAA",
+    "region": "MidAtlantic",
+    "tier": "MidMajor",
+    "members": [
+      "CAM",
+      "CHA",
+      "DRX",
+      "ELON",
+      "HAM",
+      "HOF",
+      "MONK",
+      "NCAT",
+      "NEU",
+      "SBU",
+      "TOW",
+      "UNCW",
+      "WM"
+    ]
+  },
+  {
+    "name": "Conference USA",
+    "abbreviation": "CUSA",
+    "region": "Southwest",
+    "tier": "MidMajor",
+    "members": [
+      "DEL",
+      "FIU",
+      "JSU",
+      "KSU",
+      "LIB",
+      "LT",
+      "MSU",
+      "MTSU",
+      "NMSU",
+      "SHSU",
+      "UTEP",
+      "WKU"
+    ]
+  },
+  {
+    "name": "Horizon League",
+    "abbreviation": "HL",
+    "region": "Midwest",
+    "tier": "MidMajor",
+    "members": [
+      "CSU",
+      "IUPU",
+      "NKU",
+      "OAK",
+      "PFW",
+      "RMU",
+      "UDM",
+      "UWGB",
+      "UWM",
+      "WSU",
+      "YSU"
+    ]
+  },
+  {
+    "name": "Ivy League",
+    "abbreviation": "IVY",
+    "region": "Northeast",
+    "tier": "LowMajor",
+    "members": [
+      "BRWN",
+      "COL",
+      "COR",
+      "DART",
+      "HARV",
+      "PENN",
+      "PRIN",
+      "YALE"
+    ]
+  },
+  {
+    "name": "MAAC",
+    "abbreviation": "MAAC",
+    "region": "Northeast",
+    "tier": "MidMajor",
+    "members": [
+      "CAN",
+      "FAIR",
+      "IONA",
+      "MAN",
+      "MAR",
+      "MER",
+      "MSM",
+      "NIAG",
+      "QU",
+      "RID",
+      "SHU",
+      "SIE",
+      "SPU"
+    ]
+  },
+  {
+    "name": "MAC",
+    "abbreviation": "MAC",
+    "region": "MidAtlantic",
+    "tier": "MidMajor",
+    "members": [
+      "AKR",
+      "BGSU",
+      "BSU",
+      "CMU",
+      "EMU",
+      "KENT",
+      "MASS",
+      "MU",
+      "NIU",
+      "OHIO",
+      "TOL",
+      "UB",
+      "WMU"
+    ]
+  },
+  {
+    "name": "MEAC",
+    "abbreviation": "MEAC",
+    "region": "Southeast",
+    "tier": "LowMajor",
+    "members": [
+      "CSU",
+      "DSU",
+      "HOW",
+      "MSU",
+      "NCCU",
+      "NSU",
+      "SCST",
+      "UMES"
+    ]
+  },
+  {
+    "name": "Missouri Valley",
+    "abbreviation": "MVC",
+    "region": "Midwest",
+    "tier": "MidMajor",
+    "members": [
+      "BEL",
+      "BU",
+      "DRK",
+      "ISU",
+      "ISU",
+      "MSU",
+      "SIU",
+      "UE",
+      "UIC",
+      "UNI",
+      "VALP"
+    ]
+  },
+  {
+    "name": "Mountain West",
+    "abbreviation": "MWC",
+    "region": "West",
+    "tier": "MidMajor",
+    "members": [
+      "AFA",
+      "BSU",
+      "CSU",
+      "FRES",
+      "GCU",
+      "SDSU",
+      "SJSU",
+      "UNLV",
+      "UNM",
+      "UNR",
+      "USU",
+      "UWY"
+    ]
+  },
+  {
+    "name": "Northeast",
+    "abbreviation": "NEC",
+    "region": "Northeast",
+    "tier": "LowMajor",
+    "members": [
+      "CCSU",
+      "CSU",
+      "FDU",
+      "LEM",
+      "LIU",
+      "MER",
+      "SFU",
+      "STON",
+      "UNH",
+      "WAG"
+    ]
+  },
+  {
+    "name": "Ohio Valley",
+    "abbreviation": "OVC",
+    "region": "Midwest",
+    "tier": "LowMajor",
+    "members": [
+      "EIU",
+      "LU",
+      "MSU",
+      "SEMO",
+      "SIUE",
+      "TSU",
+      "TTU",
+      "UALR",
+      "USI",
+      "UTM",
+      "WIU"
+    ]
+  },
+  {
+    "name": "Patriot League",
+    "abbreviation": "PL",
+    "region": "Northeast",
+    "tier": "LowMajor",
+    "members": [
+      "ARMY",
+      "AU",
+      "BU",
+      "BUCK",
+      "COLG",
+      "HC",
+      "LAF",
+      "LEH",
+      "LU",
+      "NAVY"
+    ]
+  },
+  {
+    "name": "SEC",
+    "abbreviation": "SEC",
+    "region": "Southeast",
+    "tier": "PowerConference",
+    "members": [
+      "ARK",
+      "AUB",
+      "LSU",
+      "MISS",
+      "MSST",
+      "MU",
+      "OU",
+      "SC",
+      "TAMU",
+      "TENN",
+      "TEX",
+      "UA",
+      "UF",
+      "UGA",
+      "UK",
+      "VU"
+    ]
+  },
+  {
+    "name": "SWAC",
+    "abbreviation": "SWAC",
+    "region": "Southwest",
+    "tier": "LowMajor",
+    "members": [
+      "AAMU",
+      "ALC",
+      "ALST",
+      "BCU",
+      "FAMU",
+      "GSU",
+      "JSU",
+      "MVSU",
+      "PVAM",
+      "SU",
+      "TXSO",
+      "UAPB"
+    ]
+  },
+  {
+    "name": "Southern",
+    "abbreviation": "SoCon",
+    "region": "Southeast",
+    "tier": "MidMajor",
+    "members": [
+      "CIT",
+      "ETSU",
+      "FUR",
+      "MER",
+      "SAM",
+      "UNCG",
+      "UTC",
+      "VMI",
+      "WCU",
+      "WOF"
+    ]
+  },
+  {
+    "name": "Southland",
+    "abbreviation": "SLC",
+    "region": "Southwest",
+    "tier": "LowMajor",
+    "members": [
+      "ETAM",
+      "HCU",
+      "LAM",
+      "MCN",
+      "NICH",
+      "NWST",
+      "SFA",
+      "SLU",
+      "TAMU",
+      "UIW",
+      "UNO",
+      "UTRGV"
+    ]
+  },
+  {
+    "name": "Sun Belt",
+    "abbreviation": "SBC",
+    "region": "Southeast",
+    "tier": "MidMajor",
+    "members": [
+      "APP",
+      "ARST",
+      "CCU",
+      "GASO",
+      "GSU",
+      "JMU",
+      "MRSH",
+      "ODU",
+      "SOAL",
+      "TROY",
+      "TXST",
+      "ULL",
+      "ULM",
+      "USM"
+    ]
+  },
+  {
+    "name": "The Su",
+    "abbreviation": "The Su",
+    "region": "Midwest",
+    "tier": "LowMajor",
+    "members": [
+      "DU",
+      "NDSU",
+      "ORU",
+      "SDST",
+      "STT",
+      "UMKC",
+      "UND",
+      "UNO",
+      "USD"
+    ]
+  },
+  {
+    "name": "WAC",
+    "abbreviation": "WAC",
+    "region": "West",
+    "tier": "LowMajor",
+    "members": [
+      "ACU",
+      "CBU",
+      "SUU",
+      "TART",
+      "UTA",
+      "UTEC",
+      "UVU"
+    ]
+  },
+  {
+    "name": "West Coast",
+    "abbreviation": "WCC",
+    "region": "West",
+    "tier": "MidMajor",
+    "members": [
+      "GONZ",
+      "LMU",
+      "OSU",
+      "PAC",
+      "PEPP",
+      "PORT",
+      "SCU",
+      "SEA",
+      "SMC",
+      "USD",
+      "USF",
+      "WSU"
+    ]
+  }
+]

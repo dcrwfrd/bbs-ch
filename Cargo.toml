@@ -2,11 +2,13 @@
 name = "bbs-ch"
 version = "0.1.0"
 edition = "2021"
+default-run = "bbs-ch"
 
 [dependencies]
 # iced: cross-platform GUI framework with an Elm-style architecture.
 # The "wgpu" feature selects the GPU-accelerated renderer (default on desktop).
-iced = { version = "0.14", features = ["wgpu"] }
+iced = { version = "0.14", features = ["wgpu", "svg", "image"] }
+
 
 # Application-level error handling throughout the codebase.
 anyhow = "1"
@@ -18,3 +20,19 @@ serde = { version = "1", features = ["derive"] }
 # JSON implementation of serde. Used permanently for config/data files,
 # and temporarily for save state until SQLite is introduced.
 serde_json = "1"
+
+# CSV parsing. Used by the build_world tool to ingest the schools spreadsheet
+# and generate data/schools.json and data/conferences.json.
+csv = "1"
+
+# SQLite storage for the static league world (schools, conferences, tournaments).
+# The "bundled" feature compiles SQLite from source — no system libsqlite3 required.
+rusqlite = { version = "0.32", features = ["bundled"] }
+
+# Native file dialogs. Uses the XDG Desktop Portal on Linux (opens the system
+# file manager with built-in thumbnails) with no extra system dependencies.
+rfd = "0.15"
+
+# Image decoding and resizing. Used to pre-scale PNG thumbnails to 32×32 RGBA
+# before uploading to the GPU, keeping texture memory tiny (~4 KB each).
+image = { version = "0.25", default-features = false, features = ["png"] }

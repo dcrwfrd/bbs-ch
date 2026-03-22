@@ -1,6 +1,14 @@
+pub mod ad;
+pub mod booster;
+pub mod coach;
 pub mod conference;
+pub mod game_state;
 pub mod league;
+pub mod media;
 pub mod player;
+pub mod prestige;
 pub mod prospect;
+pub mod rivalry;
 pub mod school;
 pub mod team;
+pub mod tournament;
